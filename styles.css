@@ -1,0 +1,122 @@
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+.container{
+    background-color: pink;
+    height:100vh;
+}
+#main{
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    width:30%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-top: 1rem;
+    gap: 0rem;
+    padding:1.5rem;
+    box-shadow: rgba(36, 11, 202, 0.35) 5px 10px 15px ;
+     background-color: white;
+
+}
+button{
+    padding:1rem 1rem;
+    background-color: white;
+    box-shadow: 5px 5px 8px purple;
+    border-radius: .5rem;
+    border:2px solid black;;
+    font-size: 2rem;
+    font-weight:bolder;
+    color:#D375FC;
+    height: 4rem;
+    /* width:100px; */
+    /* width:50%; */
+}
+button:hover{
+    transform:rotateX(20deg);
+}
+
+h1{
+    text-align: center;
+    padding: 1.5rem 1.5rem;
+    padding-top: 2rem;
+    color: rgb(50, 48, 99);
+    text-shadow: -1px -1px 0px blue;
+}
+.section{
+    text-align: center;
+    margin-top: 3rem;
+    
+    
+}
+#restart{
+    background-color:blue ;
+    color: white;
+    box-shadow: 5px 5px 0px ;
+    width:30%;
+    /* margin-bottom:1rem; */
+    font-size: large;
+    font-weight: bold;
+}
+
+#result{
+   
+    /* margin-left:46.5%; */
+    text-align: center;
+    color: orangered;
+    /* transform:rotateX(180deg); */
+    display:none;
+}
+
+@media only screen and (max-width:575px){
+    
+        /* button{
+            height:1rem;
+            padding: .5rem .5rem;
+        } */
+    #main{
+        width:75%;
+    }
+    
+}
+
+@media only screen and (max-width:300px){
+    
+    /* button{
+        height:1rem;
+        padding: .5rem .5rem;
+    } */
+#main{
+    width:90%;
+}
+
+}
+
+@media only screen and (min-width:575px) and (max-width:744px){
+    
+    /* button{
+        height:1rem;
+        padding: .5rem .5rem;
+    } */
+#main{
+    width:50%;
+}
+
+}
+
+@media only screen and (max-height:519px){
+    
+    /* button{
+        height:1rem;
+        padding: .5rem .5rem;
+    } */
+   #restart{
+    position:absolute;
+    top:0;
+    left:0;
+    width:6rem;
+   }
+}
